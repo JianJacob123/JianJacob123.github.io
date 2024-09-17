@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+            <div class="container">
+                <div class="logo">
+                    <h1>FreeCodeCamp</h1>
+                </div>
+                <div class="nav">
+                    <ul>
+                    <li><a href="https://www.w3schools.com">Home</a></li>
+                    <li><a href="https://www.w3schools.com">About</a></li>
+                    <li><a href="https://www.w3schools.com">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+    </header>
+
+    <h1>Survey Form</h1>
+    <p>Thank you for taking the time to help us improve the platform</p>
+    <hr>
+
+    <fieldset>
+        <label>Name</label>
+        <div class="wrapper">
+        <input type="text" placeholder="Enter your Name">
+        </div>
+        <label>Email</label>
+        <div class="wrapper">
+        <input type="text" placeholder="Enter your Email">
+        </div>
+        <label>Age (optional)</label>
+        <div class="wrapper">
+        <input type="text" placeholder="Enter your Age">
+        <label>Which best describes your current role</label>
+        </div>
+
+        <div class="wrapper">
+        <select>
+            <option value="1">Student</option>
+            <option value="2">FullTime Job</option>
+            <option value="3">FullTime Learner</option>
+            <option value="4">Prefer Not Say</option>
+            <option value="5">Other</option>
+        </select>
+        </div>
+
+        <label>Would you recommend Free code camp to a friend?</label>
+
+        <label for="definitely">
+        <input type="radio" name="action" id="definitely">Definitely
+        </label>
+        <label for="maybe">
+        <input type="radio" name="action" id="maybe">Maybe
+        </label>
+        <label for="notsure">
+        <input type="radio" name="action" id="notsure">Not Sure
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <label>What is your favorite feature on freecodecamp?</label>
+        <div class="wrapper">
+        <select>
+            <option value="">Select An Option</option>
+        </select>
+        </div>
+        <label>What would you like to see to improve? (check all that apply)</label>
+
+        <label for="frontend">
+        <input type="checkbox" id="frontend">Front-End Project
+        </label>
+        <label for="backend">
+        <input type="checkbox" id="backend">Back-End Project
+        </label>
+        <label for="datavisualization">
+        <input type="checkbox" id="datavisualization">Data Visualization
+        </label>
+        <label for="challenges">
+        <input type="checkbox" id="challenges">Challenges
+        </label>
+        <label for="opensourcecommunity">
+        <input type="checkbox" id="opensourcecommunity">Open Source Community
+        </label>
+        <label for="gitterhelprooms">
+        <input type="checkbox" id="gitterhelprooms">Gitter help rooms
+        </label>
+        <label for="videos">
+        <input type="checkbox" id="videos">Videos
+        </label>
+        <label for="citymeetups">
+        <input type="checkbox" id="citymeetups">City Meetups
+        </label>
+        <label for="wiki">
+        <input type="checkbox" id="wiki">Wiki
+        </label>
+        <label for="forum">
+        <input type="checkbox" id="forum">Forum
+        </label>
+        <label for="additionalcourses">
+        <input type="checkbox" id="additionalcourses">Additonal Courses
+        </label>
+
+        <label>Any comments or suggestions</label>
+        <div class="comment">
+        <input type="text" placeholder ="Enter your comment here">
+        </div>
+
+        <button type="submit">Submit</button>
+    </fieldset>
+
+    <footer>
+        <p>&copy; All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
