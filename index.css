@@ -286,10 +286,89 @@ strong{
     background-color: rgb(214, 191, 90);
 }
 
+/* Skills Section */
+.tech-skill-label{
+    text-align: center;
+    font-size: clamp(20px, 2.5vw, 50px);
+}
+.skills-progress {
+    width: 60%;
+    margin: 8% auto;
+    text-align: center;
+    padding: 50px 20px;               /* add padding so content doesn’t stick to edges */
+    background: linear-gradient(135deg, rgb(1, 3, 41), rgb(30, 30, 30)); /* subtle dark gradient */
+    border-radius: 15px;               /* rounded corners to match your cards */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3); /* subtle depth */
+    color: rgb(227, 227, 227);         /* make text readable on dark background */
+}
+
+.skill-bar{
+    margin-bottom: 20px;
+
+}
+
+.skill-label-icon {
+    display: inline-flex;       /* align icon and text */
+    align-items: center;        /* vertical center */
+    gap: 8px;                   /* space between icon and text */
+    font-weight: bold;
+    color: rgb(227, 227, 227);
+    margin-bottom: 5px;
+
+}
+
+
+.bar{
+    width: 100%;
+    height: 14px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress{
+    height: 100%;
+    background-color: rgb(214, 191, 90);
+    border-radius: 10px;
+    animation: fill 1.5s ease-in-out;
+}
+
+/* Skill levels */
+.html{ width: 90%; }
+.js{ width: 80%; }
+.flutter{ width: 60%; }
+.backend{ width: 80%; }
+.ml{ width: 60%; }
+
+@keyframes fill{
+    from { width: 0; }
+}
+
+
 footer{
     text-align:center;
     margin-top: 5%;
     font-size: clamp(10px, 1vw, 50px);
 }
+
+@media (max-width: 768px) {
+    .project-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card{
+        width: 90%;
+        height: auto;
+    }
+
+    .card-content p{
+        font-size: 14px;
+    }
+    .skills-progress{
+        width: 85%;
+    }
+}
+
 
 
